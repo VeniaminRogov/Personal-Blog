@@ -1,0 +1,17 @@
+.page {
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.page__title {
+  margin-bottom: 30px;
+  font-size: 21px;
+  color: $white;
+
+  &--ta-c {
+    text-align: center;
+  }
+}

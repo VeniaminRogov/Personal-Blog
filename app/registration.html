@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- Header -->
+
+    <header class="header">
+      <div class="header__left">
+
+        <!-- Menu -->
+
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--has-subnav" href="#">Статьи</a>
+              <ul class="subnav">
+                <li class="subnav__item">
+                  <a class="subnav__link" href="#">Создание сайтов</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link" href="#">Интернет-маркетинг</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link" href="#">Продвижение видео</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Обо мне</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Реклама</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- /Menu -->
+
+      </div>
+      <div class="header__right">
+
+        <!-- Menu -->
+
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Профиль</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- /Menu -->
+
+        <!-- Search -->
+
+        <form class="search" action="/" method="post">
+          <input class="search__input" type="text" placeholder="Поиск по блогу">
+        </form>
+      </div>
+
+      <!-- /Search -->
+    </header>
+
+    <!-- /Header -->
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+      <div class="sidebar__header">
+        <img class="sidebar__header-img" src="./img/sidebar-header.jpg" alt="sidebar header img">
+      </div>
+      <div class="sidebar__content">
+
+        <!-- Profile -->
+
+        <div class="profile">
+          <img class="profile__photo" src="./img/sidebar-header.jpg" alt="">
+          <p class="profile__name">Рогов Вениамин</p>
+          <p class="profile__prof">блог front-end разработчика</p>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <img src="./img/inst.svg" alt="instagram icon">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <img src="./img/vk.svg" alt="vk icon">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <img src="./img/pint.svg" alt="pinterest icon">
+              </a>
+            </li>
+          </ul>
+          <p class="profile__descr">
+            Front-end разработчик. Практик верстки сайтов.
+            Созданием сайтов занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов
+            в
+            создании сайтов различной сложности.
+          </p>
+        </div>
+
+        <!-- /Profile -->
+
+      </div>
+      <div class="sidebar__footer">
+        <a class="btn btn--red" href="#">
+          Мои работы
+        </a>
+        <button class="btn btn--blue" type="button">
+          Написать мне
+        </button>
+      </div>
+    </aside>
+
+    <!-- /Sidebar -->
+
+    <main class="main">
+      <div class="container">
+        <h1 class="page__title page__title--ta-c">
+          регистрация
+        </h1>
+
+        <div class="registr">
+          <form class="form form--center" action="/" method="post">
+            <div class="form__group form__group--medium">
+              <input type="text" class="form__control" placeholder="Ваше имя">
+              <span class="form__line"></span>
+            </div>
+            <div class="form__group form__group--medium">
+              <input type="text" class="form__control" placeholder="Ваш email">
+              <span class=" form__line"></span>
+            </div>
+            <div class="form__group form__group--medium">
+              <input type="password" class="form__control" placeholder="Новый пароль">
+              <span class="form__line"></span>
+            </div>
+            <div class="form__group form__group--medium">
+              <input type="password" class="form__control" placeholder="Подтвердите пароль">
+              <span class="form__line"></span>
+            </div>
+            <div class="form__footer form__footer--center">
+              <button class="btn btn--blue btn--rounded btn--sm" type="submit">Зарегистрироваться</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Modal contact -->
+
+		<div class="modal modal__contact">
+			<div class="modal__content">
+				<button class="modal__close">
+					<img src="./img/close.svg" alt="Close btn">
+				</button>
+				<form class="form" action="/" method="post">
+					<div class="form__group form__group--medium">
+						<input type="text" class="form__control" placeholder="Ваше имя" value="Рогов Вениамин">
+						<span class="form__line"></span>
+					</div>
+					<div class="form__group form__group--medium">
+						<input type="text" class="form__control" placeholder="Ваш email">
+						<span class=" form__line"></span>
+					</div>
+					<div class="form__group form__group--medium">
+						<input type="text" class="form__control" placeholder="Ваше сообщение">
+						<span class="form__line"></span>
+					</div>
+					<div class="form__footer">
+						<button class="btn btn--blue btn--rounded btn--sm" type="submit">Отправить</button>
+					</div>
+				</form>
+				<ul class="modal__footer">
+					<li class="modal__footer-item">email:
+						<a class="modal__footer-link">info@mywebsite.ru</a>
+					</li>
+					<li class="modal__footer-item">тел:
+						<a class="modal__footer-link">+943-232-856-22</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- /Modal Contact -->
+
+		<!-- Modal Share -->
+
+		<div class="modal modal__share">
+			<div class="modal__content modal__content--share">
+				<button class="modal__close">
+					<img src="./img/close.svg" alt="Close btn">
+				</button>
+				<ul class="social social--modal">
+					<li class="social__item">
+						<a class="social__link" href="#">
+							<img src="./img/facebook.svg" alt="facebook share link">
+						</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link" href="#">
+							<img src="./img/twitter.svg" alt="">
+						</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link" href="#">
+							<img src="./img/vk2.svg" alt="">
+						</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link" href="#">
+							<img src="./img/copy.svg" alt="">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- /Modal Share -->
+
+		<!-- Modal Stories -->
+
+		<div class="modal">
+			<video class="modal__video" src="" poster=""></video>
+		</div>
+
+		<!-- /Modal Stories -->
+    
+  </div>
+</body>
+
+</html>

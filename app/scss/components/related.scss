@@ -1,0 +1,43 @@
+.related {
+  border-bottom: 2px solid #1c1c1c;
+  padding-bottom: 5px;
+}
+
+.related__title {
+  @extend %roboto-m;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.related__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.related__list-item {
+  margin-bottom: 25px;
+  width: 50%;
+}
+
+.related__list-title {
+  @extend %roboto-m;
+  color: #f3eba2;
+  transition: color 0.2s linear;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.related__link {
+  &:hover {
+    text-decoration: underline;
+    color: darken(#f3eba2, 5%);
+  }
+}
+
+.related__date {
+  @extend %lato-r;
+  color: $subtext-color;
+  font-size: 1.2rem;
+}

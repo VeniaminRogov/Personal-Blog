@@ -1,0 +1,20 @@
+.social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  &--modal {
+    margin: 0;
+  }
+
+  @include brakpoint($tablet-bp) {
+    .sidebar,
+    & {
+      display: none;
+    }
+  }
+}
+
+.social__item {
+  padding-right: 15px;
+}

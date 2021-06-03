@@ -1,0 +1,58 @@
+.form {
+  &--center {
+    margin: 0 auto;
+    max-width: 280px;
+    width: 100%;
+  }
+}
+
+.form__group {
+  margin-bottom: 15px;
+  position: relative;
+
+  &--medium {
+    margin-bottom: 30px;
+  }
+}
+
+.form__control {
+  display: block;
+  width: 100%;
+  height: 30px;
+  padding: 5px 0;
+  background: none;
+  border: none;
+  outline: none;
+  border-radius: none;
+  box-shadow: none;
+  font-family: inherit;
+  color: $white;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #3f3f3f;
+
+  &:focus + .form__line {
+    width: 100%;
+  }
+
+  &--textarea {
+    resize: none;
+    overflow: hidden;
+  }
+}
+
+.form__line {
+  width: 0;
+  height: 1px;
+  background-color: $blue;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: width 0.2s ease-in-out;
+}
+
+.form__footer {
+  &--center {
+    text-align: center;
+  }
+}

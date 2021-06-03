@@ -1,0 +1,58 @@
+.comments {
+  margin-top: 50px;
+}
+
+.comments__item {
+  margin-bottom: 30px;
+
+  > .comments {
+    padding-left: 20px;
+    margin-top: 30px;
+  }
+}
+
+.comments__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.comments__avatar {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 16px;
+}
+
+.comments__name,
+.comments__pubdate,
+.comments__text {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+.comments__name {
+  @extend %roboto-m;
+}
+
+.comments__pubdate {
+  color: $subtext-color;
+}
+
+.comments__text {
+  margin-bottom: 5px;
+  line-height: 1.3;
+}
+
+.comments__btn {
+  font-size: 1.2rem;
+  color: #107eff;
+  cursor: pointer;
+  transition: color 0.2s linear;
+
+  &:hover {
+    text-decoration: underline;
+    color: lighten(#107eff, 5%);
+  }
+}

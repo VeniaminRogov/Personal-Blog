@@ -1,0 +1,9 @@
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 50px;
+
+  @include brakpoint($moblie-bp) {
+    padding: 0 15px;
+  }
+}

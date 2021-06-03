@@ -1,0 +1,9 @@
+@mixin bgc-darking($color) {
+  background-color: darken($color, 5%);
+}
+
+@mixin brakpoint($bp) {
+  @media (max-width: $bp) {
+    @content;
+  }
+}

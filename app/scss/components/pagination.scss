@@ -1,0 +1,30 @@
+.pagination {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination__link {
+  padding: 12px 16px;
+  background-color: $secondary;
+  margin-right: 10px;
+  border-radius: 3px;
+  text-align: center;
+  color: $white;
+  box-shadow: 0px 0px 10px rgba($black, 0.15);
+  transition: background-color 0.2s linear;
+
+  &:hover {
+    background-color: lighten($secondary, 5%);
+  }
+
+  &--active {
+    background-color: $blue;
+    box-shadow: 0px 0px 10px rgba(58, 108, 234, 0.15);
+    transition: background-color 0.2s linear;
+
+    &:hover {
+      background-color: darken($blue, 5%);
+    }
+  }
+}
