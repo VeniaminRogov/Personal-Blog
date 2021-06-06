@@ -7,7 +7,7 @@
     margin: 0;
   }
 
-  @include brakpoint($tablet-bp) {
+  @include breakpoint($tablet-bp) {
     .sidebar,
     & {
       display: none;

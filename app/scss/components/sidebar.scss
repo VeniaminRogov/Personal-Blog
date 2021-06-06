@@ -8,8 +8,16 @@
   z-index: $z-index;
   box-shadow: 5px 0px 15px rgba(5, 5, 5, 0.1);
 
-  @include brakpoint($tablet-bp) {
+  @include breakpoint($tablet-bp) {
     // display: none;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    top: 40px;
+
+    height: calc(100vh - 4rem);
+    padding-bottom: 1.5rem;
+
     transform: translateX(-100%);
     transition: transform 0.2s ease-in-out;
 
@@ -22,7 +30,7 @@
 .sidebar__header {
   height: 180px;
 
-  @include brakpoint($tablet-bp) {
+  @include breakpoint($tablet-bp) {
     height: 100px;
   }
 }
@@ -32,6 +40,15 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.sidebar__content {
+  padding: 0 20px;
+
+  @include breakpoint($tablet-bp) {
+    flex-grow: 1;
+    justify-content: center;
+  }
 }
 
 .sidebar__footer {

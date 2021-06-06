@@ -7,7 +7,7 @@
   left: 15px;
   transform: translateY(-50%);
 
-  @include brakpoint($tablet-bp) {
+  @include breakpoint($tablet-bp) {
     display: block;
   }
 

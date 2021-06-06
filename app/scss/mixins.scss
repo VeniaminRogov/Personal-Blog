@@ -2,7 +2,7 @@
   background-color: darken($color, 5%);
 }
 
-@mixin brakpoint($bp) {
+@mixin breakpoint($bp) {
   @media (max-width: $bp) {
     @content;
   }

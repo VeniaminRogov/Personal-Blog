@@ -8,7 +8,7 @@
   width: calc(100% - #{$sidebar-width});
   background-color: #0d0d0d;
 
-  @include brakpoint($tablet-bp) {
+  @include breakpoint($tablet-bp) {
     width: 100%;
     z-index: $z-index-modal;
   }
@@ -17,7 +17,7 @@
 .header__left {
   width: 60%;
 
-  @include brakpoint($tablet-bp) {
+  @include breakpoint($tablet-bp) {
     width: 40%;
   }
 }
@@ -27,7 +27,7 @@
   justify-content: flex-end;
   width: 40%;
 
-  @include brakpoint($tablet-bp) {
+  @include breakpoint($tablet-bp) {
     width: 60%;
   }
 }
