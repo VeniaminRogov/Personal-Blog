@@ -23,6 +23,7 @@
   font-size: 1.2rem;
   color: $white;
   transition: background-color 0.2s linear;
+  width: 100%;
 
   &:hover {
     @include bgc-darking($blue);

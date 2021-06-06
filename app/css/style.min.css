@@ -127,7 +127,7 @@ body {
   color: #d2d2d2;
 }
 
-body.no-scroll {
+body.no-scroll body.sidebar--active {
   overflow: hidden;
 }
 
@@ -148,6 +148,23 @@ body.no-scroll {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 991px) {
+  .sidebar-active .page {
+    position: relative;
+  }
+  .sidebar-active .page::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+  }
 }
 
 .page__title {
@@ -754,6 +771,7 @@ body.no-scroll {
   -webkit-transition: background-color 0.2s linear;
   -o-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
+  width: 100%;
 }
 
 .subnav__link:hover {
@@ -935,6 +953,7 @@ body.no-scroll {
   border: none;
   outline: none;
   resize: none;
+  overflow: hidden;
   background-color: transparent;
   font-family: inherit;
   font-size: 1.5rem;
