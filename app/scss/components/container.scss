@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 0 50px;
 
-  @include breakpoint($moblie-bp) {
+  @include breakpoint($mobile-bp) {
     padding: 0 15px;
   }
 }

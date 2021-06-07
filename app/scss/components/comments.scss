@@ -8,6 +8,10 @@
   > .comments {
     padding-left: 20px;
     margin-top: 30px;
+
+    @include breakpoint($mobile-bp) {
+      padding-left: 10px;
+    }
   }
 }
 

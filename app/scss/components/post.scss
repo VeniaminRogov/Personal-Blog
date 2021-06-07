@@ -5,6 +5,10 @@
   background-color: $secondary;
   box-shadow: 0px 15px 25px rgba($black, 0.35);
   margin-bottom: 30px;
+
+  @include breakpoint($mobile-bp) {
+    padding: 15px;
+  }
 }
 
 .post__header {
@@ -24,6 +28,10 @@
 
 .post__content {
   margin-bottom: 20px;
+
+  @include breakpoint($mobile-bp) {
+    margin-bottom: 15px;
+  }
 }
 
 .post__title {
@@ -114,14 +122,21 @@
 
 .post__footer {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+
+  @include breakpoint($mobile-bp) {
+    flex-direction: column;
+  }
 }
 
 .post__data {
   padding: 0 15px 0 0;
   display: flex;
   align-items: center;
+
+  @include breakpoint($mobile-bp) {
+    margin-bottom: 15px;
+  }
 }
 
 .post__data-item {

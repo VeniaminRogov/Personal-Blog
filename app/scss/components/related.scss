@@ -13,20 +13,28 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @include breakpoint($mobile-bp) {
+    flex-direction: column;
+  }
 }
 
 .related__list-item {
   margin-bottom: 25px;
   width: 50%;
+
+  @include breakpoint($mobile-bp) {
+    width: 100%;
+  }
 }
 
 .related__list-title {
   @extend %roboto-m;
   color: #f3eba2;
   transition: color 0.2s linear;
-  overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .related__link {

@@ -22,4 +22,10 @@
   &:focus {
     border: none;
   }
+
+  @include breakpoint($tablet-bp) {
+    & {
+      font-size: 1.6rem;
+    }
+  }
 }

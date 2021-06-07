@@ -1,8 +1,14 @@
 .stories {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 13px;
+  grid-template-rows: 195px;
   margin-bottom: 3rem;
+
+  @include breakpoint($mobile-bp) {
+    overflow: auto;
+    grid-template-columns: 140px 140px 140px 140px;
+  }
 }
 
 .stories__item {

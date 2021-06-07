@@ -15,7 +15,6 @@
 .add-post__textarea {
   display: block;
   flex-grow: 1;
-  width: 80%;
   height: 26px;
   border: none;
   outline: none;
@@ -26,8 +25,16 @@
   font-size: 1.5rem;
   color: $white;
 
+  @include breakpoint($tablet-bp) {
+    height: 35px;
+  }
+
   &::placeholder {
     color: #d2d2d2;
+
+    @include breakpoint($tablet-bp) {
+      font-size: 1.3rem;
+    }
   }
 }
 
@@ -47,6 +54,11 @@
   border: none;
   cursor: pointer;
   background-repeat: no-repeat;
+
+  @include breakpoint($mobile-bp) {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 .add-post__file {
@@ -63,4 +75,6 @@
   background-color: #3137c9;
   background-image: url("../../img/send.svg");
   background-position: 55% 50%;
+  font-size: 0;
+  color: transparent;
 }
