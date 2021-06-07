@@ -16,10 +16,12 @@
 
   <div class="page">
 
-    <!-- Header -->
-
     <header class="header">
       <div class="header__left">
+
+        <button class="burger burger--active" type="button">
+          <span></span>
+        </button>
 
         <!-- Menu -->
 
@@ -82,7 +84,7 @@
 
     <!-- Sidebar -->
 
-    <aside class="sidebar">
+    <aside class="sidebar sidebar--active">
       <div class="sidebar__header">
         <img class="sidebar__header-img" src="./img/sidebar-header.jpg" alt="sidebar header img">
       </div>
@@ -92,8 +94,13 @@
 
         <div class="profile">
           <img class="profile__photo" src="./img/sidebar-header.jpg" alt="">
-          <p class="profile__name">Рогов Вениамин</p>
-          <p class="profile__prof">блог front-end разработчика</p>
+          <div class="profile__header">
+            <p class="profile__name">Рогов Вениамин</p>
+            <p class="profile__prof">блог front-end разработчика</p>
+          </div>
+
+          <!--  -->
+
           <ul class="social">
             <li class="social__item">
               <a class="social__link" href="#" target="_blank">
@@ -116,11 +123,44 @@
             Созданием сайтов занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в
             создании сайтов различной сложности.
           </p>
+
+
         </div>
 
         <!-- /Profile -->
 
+        <nav class="menu menu--mobile">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--has-subnav" href="#">Статьи</a>
+              <ul class="subnav">
+                <li class="subnav__item">
+                  <a class="subnav__link" href="#">Создание сайтов</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link" href="#">Интернет-маркетинг</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link" href="#">Продвижение видео</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Обо мне</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Реклама</a>
+            </li>
+          </ul>
+        </nav>
+
       </div>
+
+      <!-- /Sidebar content -->
+
       <div class="sidebar__footer">
         <a class="btn btn--red" href="#">
           Мои работы
