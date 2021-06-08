@@ -15,14 +15,14 @@
 <body>
 	<!-- Page -->
 
-	<div class="page">
+	<div class="page" id="page">
 
 		<!-- Header -->
 
 		<header class="header">
 			<div class="header__left">
 
-				<button class="burger" type="button">
+				<button class="burger" type="button" id="sidebarToggle">
 					<span></span>
 				</button>
 
@@ -87,7 +87,7 @@
 
 		<!-- Sidebar -->
 
-		<aside class="sidebar ">
+		<aside class="sidebar" id="sidebar">
 			<div class="sidebar__header">
 				<img class="sidebar__header-img" src="./img/sidebar-header.jpg" alt="sidebar header img">
 			</div>
@@ -169,7 +169,7 @@
 				<a class="btn btn--red" href="#">
 					Мои работы
 				</a>
-				<button class="btn btn--blue" type="button">
+				<button class="btn btn--blue" type="button" data-modal="modal-contact">
 					Написать мне
 				</button>
 			</div>
@@ -185,7 +185,7 @@
 				<!-- Stories -->
 
 				<ul class="stories">
-					<li class="stories__item">
+					<li class="stories__item" data-modal="modal-story">
 						<img class="stories__preview" src="./img/stories/stories-1.jpg" alt="">
 						<div class="stories__title">Отдыхаю на природе</div>
 						<time class="stories__date" datetime="2020-09-21">21.09.2020</time>
@@ -378,8 +378,8 @@
 
 		<!-- Modal contact -->
 
-		<div class="modal modal__contact">
-			<div class="modal__content">
+		<div class="modal" id="modal-contact">
+			<div class="modal__content modal__content--contact">
 				<button class="modal__close">
 					<img src="./img/close.svg" alt="Close btn">
 				</button>
@@ -449,8 +449,10 @@
 
 		<!-- Modal Stories -->
 
-		<div class="modal">
-			<video class="modal__video" src="" poster=""></video>
+		<div class="modal" id="modal-story">
+			<div class="modal__content modal__content--story">
+				<video class="modal__video" src="" poster=""></video>
+			</div>
 		</div>
 
 		<!-- /Modal Stories -->

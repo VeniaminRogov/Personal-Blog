@@ -1,4 +1,3 @@
-// !Modal
 const btnModal = document.querySelectorAll('[data-modal]');
 const btnModalClose = document.querySelectorAll('.modal__close');
 const modal = document.querySelectorAll('.modal')
@@ -58,44 +57,3 @@ modal.forEach(item => {
     closeModal(currentModal);
   });
 });
-
-// -----------------------------------------------//
-
-// !Sidebar
-
-const burger = document.getElementById('sidebarToggle');
-const sidebar = document.getElementById('sidebar');
-
-burger.addEventListener('click', e => {
-  body.classList.add('sidebar--active');
-  burger.classList.add('burger--active');
-  sidebar.classList.add('sidebar--active')
-})
-
-/* burger.addEventListener('click', event => {
-  if (body.classList.contains('sidebar--active')) {
-    sidebarClose();
-  } else {
-    sidebarActive();
-  }
-});
-
-function sidebarActive() {
-  let mask = document.createElement('div');
-  mask.classList.add('page__mask');
-  mask.addEventListener('click', sidebarClose())
-  mask.appendChild(mask);
-
-  burger.classList.add('burger--active');
-  body.classList.add('sidebar--active');
-  sidebar.classList.add('sidebar--active');
-}
-
-function sidebarClose() {
-  let mask = document.querySelector('.page__mask');
-  mask.classList.remove('page__mask');
-
-  burger.classList.remove('burger--active');
-  body.classList.remove('sidebar--active');
-  sidebar.classList.remove('sidebar--active'); */
-}

@@ -80,7 +80,7 @@
 
     <!-- Sidebar -->
 
-    <aside class="sidebar">
+    <aside class="sidebar sidebar">
       <div class="sidebar__header">
         <img class="sidebar__header-img" src="./img/sidebar-header.jpg" alt="sidebar header img">
       </div>
@@ -94,8 +94,6 @@
             <p class="profile__name">Рогов Вениамин</p>
             <p class="profile__prof">блог front-end разработчика</p>
           </div>
-
-          <!--  -->
 
           <ul class="social">
             <li class="social__item">
@@ -150,6 +148,12 @@
             <li class="menu__item">
               <a class="menu__link" href="#">Реклама</a>
             </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Профиль</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Выйти</a>
+            </li>
           </ul>
         </nav>
 
@@ -169,44 +173,52 @@
 
     <!-- /Sidebar -->
 
+    <!-- Main -->
+
     <main class="main">
       <div class="container">
         <h1 class="page__title">
           Профиль
         </h1>
 
-        <div class="cabinet">
-          <div class="cabinet__form">
-            <div class="form__group form__group--medium">
-              <input type="text" class="form__control" placeholder="Ваше имя" value="Рогов Вениамин">
-              <span class="form__line"></span>
+
+        <form class="form" action="/" method="POST">
+          <div class="cabinet">
+            <div class="cabinet__form">
+              <div class="form__group form__group--medium">
+                <input type="text" class="form__control" placeholder="Ваше имя" value="Рогов Вениамин">
+                <span class="form__line"></span>
+              </div>
+              <div class="form__group form__group--medium">
+                <input type="text" class="form__control" placeholder="Ваша почта" value="rogov.veniamin@gmail.com">
+                <span class="form__line"></span>
+              </div>
+              <div class="form__group form__group--medium">
+                <input type="password" class="form__control" placeholder="Новый пароль">
+                <span class="form__line"></span>
+              </div>
+              <div class="form__group form__group--medium">
+                <input type="password" class="form__control" placeholder="Подтвердите пароль">
+                <span class="form__line"></span>
+              </div>
             </div>
-            <div class="form__group form__group--medium">
-              <input type="text" class="form__control" placeholder="Ваша почта" value="rogov.veniamin@gmail.com">
-              <span class="form__line"></span>
-            </div>
-            <div class="form__group form__group--medium">
-              <input type="password" class="form__control" placeholder="Новый пароль">
-              <span class="form__line"></span>
-            </div>
-            <div class="form__group form__group--medium">
-              <input type="password" class="form__control" placeholder="Подтвердите пароль">
-              <span class="form__line"></span>
+            <div class="cabinet__avatar">
+              <img class="cabinet__avatar-img" src="./img/profile-avatar.jpg" alt="profile avatar">
+              <label class="cabinet__file">
+                <input class="dn" type="file">
+                выбрать аватар
+              </label>
             </div>
           </div>
-          <div class="cabinet__avatar">
-            <img class="cabinet__avatar-img" src="./img/profile-avatar.jpg" alt="profile avatar">
-            <label class="cabinet__file">
-              <input class="dn" type="file">
-              выбрать аватар
-            </label>
+          <div class="form__footer">
+            <button class="btn btn--blue btn--rounded" type="submit">Сохранить</button>
           </div>
-        </div>
-        <button class="btn btn--blue btn--rounded btn--sm" type="submit">Сохранить</button>
         </form>
 
       </div>
     </main>
+
+    <!-- /Main -->
 
     <!-- Modal contact -->
 
@@ -288,6 +300,8 @@
     <!-- /Modal Stories -->
 
   </div>
+
+  <script src="./js/main.min.js"></script>
 </body>
 
 </html>
